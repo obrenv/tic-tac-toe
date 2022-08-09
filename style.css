@@ -1,0 +1,80 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    height:100vh;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.gameboard-container{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width:30rem;
+    height:30rem;
+}
+
+.field{
+    border: 5px solid red;
+}
+
+[data-key="1"], [data-key="2"], [data-key="3"] {
+    border-top: 0px;
+  }
+
+[data-key="7"], [data-key="8"], [data-key="9"] {
+    border-bottom: 0px;
+  }
+
+  [data-key="1"], [data-key="4"], [data-key="7"] {
+    border-left: 0px;
+  }
+
+  [data-key="3"], [data-key="6"], [data-key="9"] {
+    border-right: 0px;
+  }
+
+
+
+  
