@@ -60,7 +60,9 @@ card.dataset.pressed = true;
          
        };
 
-
+if (counter === 10){
+    displayWinner("draw")
+}
 
 }
 
@@ -86,15 +88,30 @@ let playerO = playerFactory("O");
 
 
 function displayWinner(player){
-
-
 let para = document.createElement("p");
+
+
+if(player === "draw" && winnerDeclared === false){
+
+place.appendChild(para);
+para.textContent = "IT'S DRAW";
+button.style.display = "block";
+winnerDeclared = true;
+}
+
+
+
+
+else if(winnerDeclared === false){
+
 
 place.appendChild(para);
 
 para.textContent = player + " IS A WINNER";
 button.style.display = "block";
 winnerDeclared = true;
+}
+
 
 }
 
