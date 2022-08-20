@@ -107,6 +107,7 @@ playerX.playerArray.splice(0, playerX.playerArray.length);
 playerO.playerArray.splice(0, playerO.playerArray.length);
 place.innerHTML = "";
 button.style.display = "none";
+winnerDeclared = false;
 }
 
 button.onclick = resetAll;
